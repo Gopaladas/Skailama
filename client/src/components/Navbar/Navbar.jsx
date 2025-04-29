@@ -1,7 +1,7 @@
 import React from "react";
 import bend from "../../assets/bend.png";
 import circle from "../../assets/circle.png";
-import settings from "../../assets/icon.png";
+import settings from "../../assets/Icon.png";
 import notifications from "../../assets/notifications.png";
 
 import "./Navbar.css";
