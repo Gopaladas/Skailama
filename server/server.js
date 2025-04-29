@@ -18,7 +18,9 @@ app.use(
 app.use(express.json());
 app.use(cookieParser());
 connectDB();
-
+app.get("/", (req, res) => {
+  res.send("Hello world");
+});
 app.use("/api/authUser", authRoute);
 app.use("/api/project", projectRoute);
 const PORT = process.env.PORT || 4000;
