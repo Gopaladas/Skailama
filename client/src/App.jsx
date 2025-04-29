@@ -1,6 +1,9 @@
 import React from "react";
-import { Navigate, Routes, Route } from "react-router-dom";
-import Login from "./components/Login/Login";
+import { Routes, Route } from "react-router-dom";
+import Login from "./components/Login/login";
+import Navbar from "./components/Navbar/Navbar";
+
+import { useSelector } from "react-redux";
 import Home from "./components/Home/Home";
 import Project from "./components/Projects/Project";
 import Projectdetails from "./components/Project/Projectdetails";

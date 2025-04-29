@@ -10,7 +10,7 @@ const app = express();
 dotenv.config();
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://skailama-j9gk.vercel.app",
     methods: ["GET", "PUT", "POST", "OPTIONS", "DELETE", "UPDATE"],
     credentials: true,
   })
@@ -18,7 +18,9 @@ app.use(
 app.use(express.json());
 app.use(cookieParser());
 connectDB();
-
+app.get("/", (req, res) => {
+  res.send("Hello world");
+});
 app.use("/api/authUser", authRoute);
 app.use("/api/project", projectRoute);
 const PORT = process.env.PORT || 4000;
