@@ -16,32 +16,11 @@ import { useSelector } from "react-redux";
 import Feed from "../Feed/Feed";
 
 import { Outlet } from "react-router-dom";
+import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
 
 const Projectdetails = () => {
   const { userData } = useSelector((state) => state.auth);
   const { projectId } = useParams();
-//   const [setData] = useState();
-
-  console.log(projectId);
-//   const fetchData = async (req, res) => {
-//     try {
-//       const res = await axios.get(`${projectApi}/data/${projectId}`, {
-//         withCredentials: true,
-//       });
-
-//       console.log(res.data);
-//       if (res.data.success) {
-//         console.log("hi");
-//         setData(res?.data?.project);
-//         return res?.data?.project;
-//       }
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   };
-//   useEffect(() => {
-//     fetchData();
-//   }, []);
 
   const navigate = useNavigate();
 
@@ -120,9 +99,7 @@ const Projectdetails = () => {
       </div>
 
       <div className="main-content">
-        <h3 className="breadcrumb">
-          Home Page / Sample Project / <span>Add your podcast</span>
-        </h3>
+        <Breadcrumbs />
 
         <Outlet context={{ projectId }} />
       </div>

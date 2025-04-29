@@ -1,0 +1,29 @@
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+  padding: 10px 0;
+}
+
+.breadcrumb a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span:last-child {
+  color: #333;
+  font-weight: 500;
+}
+
+.top-divide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout{
+    height: 15px;
+    width: 20px;
+}

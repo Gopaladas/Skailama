@@ -144,16 +144,29 @@ const deleteText = async (req, res) => {
 };
 
 const getProjects = async (req, res) => {
-  try {
-    const data = await Project.find();
+  const userId = req.userId;
 
-    if (!data) {
-      return res.json({ success: false, message: "Data not found" });
+  try {
+    const projects = await Project.find({ user: userId }).exec();
+
+    if (!projects || projects.length === 0) {
+      return res.status(404).json({
+        success: false,
+        message: "No projects found for this user",
+      });
     }
 
-    return res.json({ success: true, data });
+    return res.status(200).json({
+      success: true,
+      data: projects,
+    });
   } catch (error) {
-    return res.json({ success: false, message: error.message });
+    console.error("Error fetching projects:", error);
+    return res.status(500).json({
+      success: false,
+      message: "Server error while fetching projects",
+      error: error.message,
+    });
   }
 };
 

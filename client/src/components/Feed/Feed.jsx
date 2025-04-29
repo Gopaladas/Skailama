@@ -35,11 +35,11 @@ const Feed = ({ handleClose, onProjectCreated, id }) => {
     }
   };
   return (
-    <div className="Feed-section">
-      <div className="Feed-form">
-        <p className="overlay-heading">Create Project</p>
+    <div className="Feed-section1">
+      <div className="Feed-form1">
+        <p className="overlay-heading1">Create Project</p>
         <form onSubmit={handleSubmit}>
-          <div className="form-content">
+          <div className="form-content1">
             <label className="label">Name</label>
             <input
               type="text"
@@ -51,6 +51,7 @@ const Feed = ({ handleClose, onProjectCreated, id }) => {
                   [e.target.name]: e.target.value,
                 }))
               }
+              className="feedInput"
               placeholder="Type here"
             />
             <label className="label">Transcription</label>
@@ -71,15 +72,15 @@ const Feed = ({ handleClose, onProjectCreated, id }) => {
             ) : (
               ""
             )}
-            <div className="foot-form">
+            <div className="foot-form1">
               <button
                 type="button"
-                className="cancel-btn"
+                className="cancel-btn1"
                 onClick={handleCancel}
               >
                 cancel
               </button>
-              <button type="submit" className="submit-btn">
+              <button type="submit" className="submit-btn1">
                 Create
               </button>
             </div>

@@ -1,4 +1,4 @@
-.Feed-section {
+.Feed-section1 {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
   z-index: 1000;
 }
 
-.Feed-form {
+.Feed-form1 {
   height: 250px;
   width: 400px;
   background-color: #ffffff;
@@ -24,7 +24,7 @@
   border-radius: 10px;
 }
 
-.overlay-heading {
+.overlay-heading1 {
   font-size: 20px;
   font-weight: bolder;
 }
@@ -33,37 +33,37 @@
   color: gray;
 }
 
-input[type="text"] {
-  width: 350px;
+.feedInput {
+  width: 550px;
   height: 25px;
   padding-left: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-.form-content {
+.form-content1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.foot-form {
+.foot-form1 {
   display: flex;
   justify-content: end;
   align-items: center;
   gap: 20px;
 }
 
-.cancel-btn {
+.cancel-btn11 {
   color: red;
   border: none;
 }
 
-.display-warning {
+.display-warning1 {
   color: rgb(224, 55, 55);
 }
 
-.submit-btn {
+.submit-btn1 {
   color: #ffffff;
   background-color: #7e22ce;
   padding: 5px;

@@ -106,6 +106,7 @@ const Login = () => {
                   }))
                 }
                 placeholder="Email Address"
+                className="emailinput"
               />
             </div>
 
@@ -122,6 +123,7 @@ const Login = () => {
                     password: e.target.value,
                   }))
                 }
+                className="passwordinput"
                 placeholder="Password"
               />
             </div>
@@ -171,7 +173,7 @@ const Login = () => {
 
         <div className="register-section">
           <p>
-            Don't have an account <a href="#">createaccount</a>
+            Don't have an account <a href="/register">createaccount</a>
           </p>
         </div>
       </div>

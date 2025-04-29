@@ -4,8 +4,10 @@ import group from "../../assets/group.png";
 import Frame from "../../assets/Frame.png";
 import "./Home.css";
 import Overlay from "../Overlay/Overlay";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
 
   const handleShow = () => {
     setShow(true);
@@ -14,9 +16,17 @@ const Home = () => {
   const handleClose = () => {
     setShow(false);
   };
+  const handleNavigate = () => {
+    navigate("/projects");
+  };
   return (
     <div>
       <Navbar />
+      <div className="top-btn">
+        <button onClick={handleNavigate} className="project-btn1">
+          Projects
+        </button>
+      </div>
       <div className="main-home-section">
         <div className="main-sub">
           <p className="main-home-heading">Create a New Project</p>
