@@ -1,0 +1,42 @@
+.main-home-section {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-btn {
+  height: 20px;
+  width: 100px;
+  padding: 0px;
+}
+
+.frame {
+  height: 20px;
+  width: 100px;
+}
+
+.main-home-heading {
+  color: #7e22ce;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.group-img {
+  height: 170px;
+}
+
+.main-sub {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-para {
+  font-size: small;
+  text-align: justify;
+  color: gray;
+}

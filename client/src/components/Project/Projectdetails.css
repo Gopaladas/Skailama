@@ -1,0 +1,291 @@
+.project-section {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 100px;
+}
+
+.left-section-project {
+  background-color: #f8f8f8;
+  padding-left: 30px;
+  padding-top: 30px;
+  height: 90vh;
+}
+
+.logo-project {
+  height: 25px;
+  width: 100px;
+}
+
+li {
+  list-style: none;
+}
+
+.sub-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.active-Link {
+  color: #7e22ce;
+  filter: brightness(0) saturate(100%) invert(16%) sepia(89%) saturate(3614%)
+    hue-rotate(266deg) brightness(89%) contrast(93%);
+}
+
+.normal-link {
+  color: grey;
+  filter: brightness(0) saturate(100%) invert(16%) sepia(89%) saturate(3614%)
+    hue-rotate(266deg) brightness(89%) contrast(93%);
+}
+
+.side-list {
+  position: relative;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.project-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.sidebar {
+  width: 240px;
+  background: #f7f6fb;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #333;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.link img {
+  width: 20px;
+  height: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background: #fff;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb span {
+  color: purple;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+.card-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.source-card {
+  flex: 1;
+  border: 1px solid #e1e1e1;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.source-card:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.source-card img {
+  width: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.upload-area {
+  display: flex;
+  justify-content: center;
+}
+
+.upload-box {
+  border: 2px dashed #aaa;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  width: 60%;
+  background-color: #fafafa;
+}
+
+.upload-icon {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+.file-types {
+  font-size: 12px;
+  color: gray;
+  margin: 0.5rem 0;
+}
+
+.select-btn {
+  background: purple;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.settings-logo {
+  height: 20px;
+  width: 20px;
+}
+
+.help {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-box {
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #e3e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.line {
+  height: 2px;
+  width: 200px;
+  background-color: #777;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sub-user-box {
+  height: 35px;
+  width: 50px;
+  background-color: #7e22ce;
+  border-radius: 5px;
+  
+}
+
+.text-userData{
+    font-size: 10px;
+}
+
+.big-text{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.display-list{
+    background-color: #ececec;
+    width: 700px;
+    /* height: 250px; */
+    border-radius: 5px;
+}
+
+.file-list-container {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.file-list-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.file-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.file-table th, .file-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.file-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #555;
+}
+
+.file-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.view-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.view-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+.youtube-btn{
+    border: none;
+}

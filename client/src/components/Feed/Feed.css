@@ -1,0 +1,72 @@
+.Feed-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.Feed-form {
+  height: 250px;
+  width: 400px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.overlay-heading {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.label {
+  color: gray;
+}
+
+input[type="text"] {
+  width: 350px;
+  height: 25px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.foot-form {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+
+.cancel-btn {
+  color: red;
+  border: none;
+}
+
+.display-warning {
+  color: rgb(224, 55, 55);
+}
+
+.submit-btn {
+  color: #ffffff;
+  background-color: #7e22ce;
+  padding: 5px;
+  border-radius: 5px;
+  width: 60px;
+}
