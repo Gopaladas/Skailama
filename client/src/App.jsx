@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Login from "./components/Login/login";
+import Login from "./components/Login/Login";
 import Navbar from "./components/Navbar/Navbar";
 
 import { useSelector } from "react-redux";
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/project/:projectId" element={<Projectdetails />}>
-          <Route index element={<PodCast/>}/>
+          <Route index element={<PodCast />} />
           <Route path="edit/:episodeId" element={<Edit />} />
         </Route>
       </Routes>
